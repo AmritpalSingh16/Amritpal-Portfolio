@@ -68,95 +68,133 @@
   </section>
 
   <!-- Work -->
-  <section id="work" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Work Samples</h2>
-        <p>High-impact short-form, motion graphics, narrative cuts, and more.</p>
-      </div>
-
-      <div class="grid work-grid">
-        <!-- Card 1 -->
-        <article class="work-card glass">
-          <button class="work-media" data-video="https://www.youtube.com/embed/FGVxef9YdSM?autoplay=1&modestbranding=1&rel=0">
-            <img src="preview2.png" alt="Motion Graphic Edit" loading="lazy" />
-            <span class="pill"><strong>Motion</strong></span>
-          </button>
-          <div class="work-info">
-            <h3><strong>Motion Graphic Edit</strong></h3>
-            <p>Bold supers, kinetic transitions, and striking animations.</p>
-            <ul class="tags">
-              <li>Premiere Pro</li><li>After Effects</li><li>Color</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="work-card glass">
-          <button class="work-media" data-video="https://www.youtube.com/embed/8d2DFd4LEyQ?autoplay=1&modestbranding=1&rel=0">
-            <img src="preview 1.png" alt="AI + Motion Graphic" loading="lazy" />
-            <span class="pill">AI</span>
-          </button>
-          <div class="work-info">
-            <h3>AI + Motion Graphic</h3>
-            <p>AI-driven concepts fused with cinematic motion design.</p>
-            <ul class="tags">
-              <li>CapCut</li><li>Premiere Pro</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="work-card glass">
-          <button class="work-media" data-video="https://www.youtube.com/embed/TRfL1IJq9Og?autoplay=1&modestbranding=1&rel=0">
-            <img src="preview 5.png" alt="Animated Icons" loading="lazy" />
-            <span class="pill">Icons</span>
-          </button>
-          <div class="work-info">
-            <h3>Animated Icons</h3>
-            <p>Smooth vector animations with playful timing and flow.</p>
-            <ul class="tags">
-              <li>After Effects</li><li>Design</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="work-card glass">
-          <button class="work-media" data-video="https://www.youtube.com/embed/jNhHijjZ6rM?autoplay=1&modestbranding=1&rel=0">
-            <img src="preview 3.png" alt="AI + Stock Footage" loading="lazy" />
-            <span class="pill">AI + Stock</span>
-          </button>
-          <div class="work-info">
-            <h3>AI + Stock Footage</h3>
-            <p>AI-generated scripts layered with curated stock visuals.</p>
-            <ul class="tags">
-              <li>Resolve</li><li>Sound</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="work-card glass">
-          <button class="work-media" data-video="https://www.youtube.com/embed/Req4oe3jjgY?autoplay=1&modestbranding=1&rel=0">
-            <img src="preview4.png" alt="AI + Motion Graphic Two" loading="lazy" />
-            <span class="pill">AI Motion</span>
-          </button>
-          <div class="work-info">
-            <h3>AI + Motion Graphic Two</h3>
-            <p>Second edition of AI-driven edits, with enhanced dynamic pacing.</p>
-            <ul class="tags">
-              <li>Premiere Pro</li><li>After Effects</li><li>Color</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-
-      <div class="center mt-24">
-        <a class="btn btn-ghost" href="#contact">Get a Quote</a>
-      </div>
+<section id="work" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Work Samples</h2>
+      <p>High-impact short-form, motion graphics, narrative cuts, and more.</p>
     </div>
-  </section>
+
+    <style>
+      .work-media {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 12px;
+      }
+      .work-media img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 8px 16px;
+        border-radius: 8px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+      .work-media:hover .overlay-text {
+        opacity: 1;
+      }
+    </style>
+
+    <div class="grid work-grid">
+      <!-- Card 1 -->
+      <article class="work-card glass">
+        <button class="work-media" data-video="https://www.youtube.com/embed/FGVxef9YdSM?autoplay=1&modestbranding=1&rel=0">
+          <img src="preview2.png" alt="Motion Graphic Edit" loading="lazy" />
+          <span class="overlay-text">▶ Click to Play</span>
+          <span class="pill"><strong>Motion</strong></span>
+        </button>
+        <div class="work-info">
+          <h3><strong>Motion Graphic Edit</strong></h3>
+          <p>Bold supers, kinetic transitions, and striking animations.</p>
+          <ul class="tags">
+            <li>Premiere Pro</li><li>After Effects</li><li>Color</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="work-card glass">
+        <button class="work-media" data-video="https://www.youtube.com/embed/8d2DFd4LEyQ?autoplay=1&modestbranding=1&rel=0">
+          <img src="preview 1.png" alt="AI + Motion Graphic" loading="lazy" />
+          <span class="overlay-text">▶ Click to Play</span>
+          <span class="pill">AI</span>
+        </button>
+        <div class="work-info">
+          <h3>AI + Motion Graphic</h3>
+          <p>AI-driven concepts fused with cinematic motion design.</p>
+          <ul class="tags">
+            <li>CapCut</li><li>Premiere Pro</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="work-card glass">
+        <button class="work-media" data-video="https://www.youtube.com/embed/TRfL1IJq9Og?autoplay=1&modestbranding=1&rel=0">
+          <img src="preview 5.png" alt="Animated Icons" loading="lazy" />
+          <span class="overlay-text">▶ Click to Play</span>
+          <span class="pill">Icons</span>
+        </button>
+        <div class="work-info">
+          <h3>Animated Icons</h3>
+          <p>Smooth vector animations with playful timing and flow.</p>
+          <ul class="tags">
+            <li>After Effects</li><li>Design</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="work-card glass">
+        <button class="work-media" data-video="https://www.youtube.com/embed/jNhHijjZ6rM?autoplay=1&modestbranding=1&rel=0">
+          <img src="preview 3.png" alt="AI + Stock Footage" loading="lazy" />
+          <span class="overlay-text">▶ Click to Play</span>
+          <span class="pill">AI + Stock</span>
+        </button>
+        <div class="work-info">
+          <h3>AI + Stock Footage</h3>
+          <p>AI-generated scripts layered with curated stock visuals.</p>
+          <ul class="tags">
+            <li>Resolve</li><li>Sound</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="work-card glass">
+        <button class="work-media" data-video="https://www.youtube.com/embed/Req4oe3jjgY?autoplay=1&modestbranding=1&rel=0">
+          <img src="preview4.png" alt="AI + Motion Graphic Two" loading="lazy" />
+          <span class="overlay-text">▶ Click to Play</span>
+          <span class="pill">AI Motion</span>
+        </button>
+        <div class="work-info">
+          <h3>AI + Motion Graphic Two</h3>
+          <p>Second edition of AI-driven edits, with enhanced dynamic pacing.</p>
+          <ul class="tags">
+            <li>Premiere Pro</li><li>After Effects</li><li>Color</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="center mt-24">
+      <a class="btn btn-ghost" href="#contact">Get a Quote</a>
+    </div>
+  </div>
+</section>
 
   <!-- Services -->
 <!-- Services -->
@@ -347,3 +385,4 @@
 
 </body>
 </html>
+
